@@ -12,6 +12,7 @@ public class Gcd {
     while (a != 0) {
       var temp = a;
       a = b % a;
+      b = temp;
     }
     return b;
   }

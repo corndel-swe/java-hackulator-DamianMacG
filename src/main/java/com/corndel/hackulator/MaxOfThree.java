@@ -1,20 +1,23 @@
 package com.corndel.hackulator;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class MaxOfThree {
 
   static int maxOfThree(int x, int y, int z) {
-    if (x > y && x > z) {
-      return x;
-    }
 
-    if (y > z && y > x) {
-      return y;
-    }
+    ArrayList<Integer> nums = new ArrayList<Integer>();
+    nums.add(x);
+    nums.add(y);
+    nums.add(z);
 
-    if (z > x && z > y) {
-      return z;
-    }
+    return Collections.max(nums);
 
-    throw new Error("Is this reachable?");
+   
+    
+    
+
+
   }
 }
